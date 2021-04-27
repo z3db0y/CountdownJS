@@ -1,0 +1,30 @@
+appId: com.z3db0y.countdownjs
+win:
+  artifactName: ${productName}-portable-${os}-${arch}.${ext}
+  target:
+    - target: nsis
+      arch:
+        - x64
+        - ia32
+    - target: portable
+      arch:
+        - x64
+        - ia32
+mac:
+  artifactName: ${productName}-portable-${os}-${arch}.${ext}
+  target:
+    - target: dmg
+      arch:
+        - x64
+linux:
+  artifactName: ${productName}-portable-${os}-${arch}.${ext}
+  target:
+    - target: appImage
+      arch:
+        - x64
+        - ia32
+  category: game
+nsis:
+  artifactName: ${productName}-setup-${os}-${arch}.${ext}
+  oneClick: false
+  allowToChangeInstallationDirectory: true

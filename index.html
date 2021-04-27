@@ -1,0 +1,78 @@
+<body>
+    <img src="./logo.png" height="50px">
+    <h2>Countdown</h2>
+    <div id="in">
+        <input type="number" value="0"><span class="t">h</span>
+        <input type="number" value="0"><span class="t">m</span>
+        <input type="number" value="1"><span class="t">s</span>
+        <button id="init">Start</button>
+    </div>
+    <info></info>
+    <h1 id="timer"></h1>
+</body>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+    body {
+        margin: 0;
+    }
+
+    img {
+        padding-top: 10px;
+    }
+
+    * {
+        font-family: 'Poppins';
+        text-align: center;
+        user-select: none;
+    }
+
+    h2 { padding: 10px; }
+
+    input {
+        width: 50px;
+        height: 30px;
+        margin-right: 5px;
+        margin-left: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    input:focus {
+        border: 1px solid crimson;
+        box-shadow: 0 0 5px crimson;
+        color: crimson;
+        outline: none;
+    }
+
+    input:focus + .t {
+        color: crimson;
+    }
+
+    button {
+        height: 30px;
+        margin-left: 10px;
+        background: none;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 50px;
+    }
+    
+    button:focus {
+        color: crimson;
+        border: 1px solid crimson;
+        box-shadow: 0 0 5px crimson;
+        outline: none;
+    }
+
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        margin: 0; 
+    }
+
+    #in {
+        padding-bottom: 20px;
+    }
+</style>
